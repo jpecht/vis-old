@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · income</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/income.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="income-post" class="post">
+					<div class="post-title">Income Thresholds</div>
+					<div class="post-subtitle">class division in the u.s.</div>
+					<div class="post-date">Aug 19, 2014</div>
+					<div class="post-content">
+						<div class="post-text">
+							<p>The graph below shows the income level "cut-offs" in the United States. After adjusting for inflation, it's interesting to see  
+							the steady increase in the top 5%.</p>
+						</div>
+						
+						<canvas id="income-chart"></canvas>
+						<div id="income-legend" class="legend circle-legend">
+							<svg height="14" width="14"><circle cx="7" cy="7" r="5" stroke-width="0" fill="rgb(141,188,214)"/></svg><span> - top 5%-20%</span>
+							<svg height="14" width="14"><circle cx="7" cy="7" r="5" stroke-width="0" fill="rgb(148,232,148)"/></svg><span> - top middle 20%</span>
+							<svg height="14" width="14"><circle cx="7" cy="7" r="5" stroke-width="0" fill="rgb(255,247,135)"/></svg><span> - middle 20%</span>
+							<svg height="14" width="14"><circle cx="7" cy="7" r="5" stroke-width="0" fill="rgb(255,216,163)"/></svg><span> - bottom-middle 20%</span>
+							<svg height="14" width="14"><circle cx="7" cy="7" r="5" stroke-width="0" fill="rgb(251,161,170)"/></svg><span> - bottom 20%</span>
+						</div>
+						<div id="income-source" class="source">Source: U.S. Census Bureau</div>
+						<button id="inflation-button" type="button" class="btn btn-default">Adjust for Inflation</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			
+			<footer></footer>
+		</div>
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="lib/Chart.js"></script>		
+		<script src="js/main.js"></script>		
+		<script src="js/income.js"></script>		
+	</body>
+</html>

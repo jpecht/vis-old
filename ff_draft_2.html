@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · fantasy draft pt 2</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/tooltipster.css" rel="stylesheet" type="text/css" />
+		<link href="css/tooltipster-light.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/ff_chart.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="income-post" class="post">
+					<div class="post-title">Fantasy Draft Picks Pt. 2</div>
+					<div class="post-subtitle">a look at my league's draft</div>
+					<div class="post-date">Sept 5, 2014</div>
+					<div class="post-content">
+						<div class="post-text">
+							<p>This chart was inspired by <a href="//www.rosterbait.com">roster bait</a>. It visualizes the difference between a player's 
+								draft order pick and ESPN's average draft order pick. Blue picks are late picks, while red picks are early picks ("reaches").</p>
+						</div>
+						
+						<div id="ff-table-wrapper">
+							<table id="ff-table"></table>
+						</div>
+												
+						<div id="ff-2-legend" class="legend">
+							<svg width="450" height="40"></svg>
+						</div>
+
+						<div id="ff-2-source" class="source">Source: ESPN Free Fantasy Football Live Draft 2014</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			
+			<footer></footer>
+		</div>
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="lib/jquery.tooltipster.min.js"></script>		
+		<script src="js/main.js"></script>		
+		<script src="js/ff_draft_2.js"></script>	
+	</body>
+</html>

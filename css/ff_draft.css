@@ -1,0 +1,18 @@
+#ff-graph {
+	border: 1px solid #CCC;
+}
+#ff-source { margin-top: 10px; }
+
+.axis text { font-size: 0.8em; }
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #777;
+	shape-rendering: crispEdges;
+}
+
+.axis-guide {
+	stroke: steelblue;
+	stroke-width: 1;
+	opacity: 0.25;
+}

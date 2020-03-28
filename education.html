@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · education</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/education.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="education-post" class="post">
+					<div class="post-title">Education Spending</div>
+					<div class="post-subtitle">how much money is spent per student in the u.s.</div>
+					<div class="post-date">Sept 16, 2014</div>
+					<div class="post-content">
+						<div class="post-text">
+							A map showing how much money is spent on education across the states. Blue counties spend more on education, 
+							while red counties spend less. The categories are divided into money spent on instructors and money spent on "support" 
+							(i.e. administration). The data was taken "per student" to avoid population size playing an influence. All data is 
+							comparative to the national average.
+						</div>
+						<div id="education-map-wrapper" class="map-wrapper">
+							<div id="education-map" class="us-map"></div>
+							<div id="education-map-footer">
+								<div id="education-legend-wrapper">
+									<svg id="education-legend"></svg>
+								</div>
+								<div id="national-stat"></div>
+								<div id="county-stat"></div>
+								<div id="education-dropdown-container" class="dropdown dropup">
+									<button class="btn btn-default dropdown-toggle" type="button" id="education-dropdown" data-toggle="dropdown">
+										<span id="education-dropdown-title">Total $ Spent on Education</span>&nbsp;&nbsp;<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="education-dropdown">
+										<li role="presentation"><a role="menuitem" href="#" stat="total">Total $ Spent on Education</a></li>
+										<li role="presentation"><a role="menuitem" href="#" stat="instruction">Teacher Salaries/Benefits</a></li>
+										<li role="presentation"><a role="menuitem" href="#" stat="instruction_salaries">Teacher Salaries</a></li>
+										<li role="presentation"><a role="menuitem" href="#" stat="instruction_benefits">Teacher Benefits</a></li>
+										<li role="presentation"><a role="menuitem" href="#" stat="support">Support Services</a></li>
+									</ul>
+								</div>			
+							</div>
+							<div id="education-source" class="source map-source">Source: U.S. Census Bureau</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			
+			<footer></footer>
+		</div>
+
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/topojson.v1.min.js"></script>
+		<script src="lib/bootstrap.min.js"></script>
+		<script src="lib/queue.min.js"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="js/main.js"></script>		
+		<script src="js/education.js"></script>					
+	</body>
+</html>

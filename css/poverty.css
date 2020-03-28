@@ -1,0 +1,55 @@
+
+.circle-legend svg {
+	position: relative;
+	top: 3px;
+}
+.circle-legend span { padding-right: 10px; }
+
+
+#poverty-map-footer {
+	position: relative;
+	text-align: right;
+	margin-bottom: 10px;
+}
+#poverty-legend {
+	display: inline-block;
+	width: 280px;
+	position: relative;
+	top: 10px;
+}
+#poverty-legend svg {
+	height: 15px;
+	width: 200px;
+}
+div[id ^= "poverty-legend-text-"] {
+	text-align: center;
+	display: inline-block;
+	width: 38px;
+}
+#poverty-dropdown-container {
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	left: 30px;
+}
+#poverty-dropdown-container a:hover {
+	background-color: #E0E0E0;
+}
+#poverty-average-text {
+	margin: 0px 0px 20px 30px;
+	font-size: 1em;
+	font-weight: 400;
+	text-align: left;
+	min-height: 1em;
+}
+#poverty-source {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+@media (max-width: 700px) {
+	#poverty-legend {
+		padding-top: 50px;
+	}
+}

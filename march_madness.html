@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · nba elo power rankings</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/march_madness.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="income-post" class="post">
+					<div class="post-title">How Teams Do In March Madness</div>
+					<div class="post-subtitle">NCAA Basketball tournament performance</div>
+					<div class="post-date">Mar 19, 2015</div>
+					<div class="post-content">
+						<div class="post-text">
+							Below is a table of the 10 teams that have performed the best and the 10 teams that have performed the worst in the NCAA March Madness tournament in the last 30 years.
+						</div>
+
+						<div class="table-wrapper">
+							<table class="table table-bordered table-condensed results"></table>
+						</div>
+
+						<div class="post-text after-text">
+							Teams are ranked by comparing the team's seed number with how far they advanced in the tournament. Teams get a point for every game they win in the tournament, but receive point deductions for being a higher seed. The scoring goes by the following rules:
+							<div class="bullet-container">
+								<div class="bullet">&bull; 9-16 seeds (-0) are expected to lose in the First Round (+0)</div>
+								<div class="bullet">&bull; 5-8 seeds (-1) are expected to get to the Round of 32 (+1)</div>
+								<div class="bullet">&bull; 3-4 seeds (-2) are expected to get to the Sweet Sixteen (+2)</div>
+								<div class="bullet">&bull; 2 seeds (-3) are expected to get to the Elite Eight (+3)</div>
+								<div class="bullet">&bull; 1 seeds (-4) are expected to get to the Final Four (+4)</div>
+								<div class="bullet">&bull; No team is expected to get to the National Championship (+5)</div>
+								<div class="bullet">&bull; No team is expected to win the National Championship (+6)</div>
+							</div>
+							Maryland scored 0 and Georgetown scored -6 by the way.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			
+			<footer></footer>
+		</div>
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="js/main.js"></script>		
+		<script src="js/march_madness.js"></script>		
+	</body>
+</html>

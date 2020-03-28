@@ -1,0 +1,26 @@
+#pop-slider-container {
+	text-align: center;
+}
+#pop-slider { display: inline-block; width: 40%; }
+#pop-slider-text {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 400;
+}
+#pop-dropdown-container {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+/*
+#pop-legend svg {
+	height: 15px;
+	width: 300px;
+}
+div[id ^= "pop-legend-text-"] {
+	display: inline-block;
+	text-align: center;
+	width: 28px;
+}*/

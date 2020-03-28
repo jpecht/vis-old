@@ -1,0 +1,21 @@
+.chart {
+	margin: -10px 0px 15px 0px;
+}
+.chart rect {
+	stroke-width: 0.5;
+	stroke: #999;
+}
+.chart text {
+	font-size: 1em;
+	text-anchor: middle;
+	alignment-baseline: middle;
+	dominant-baseline: middle;
+	cursor: default;
+}
+.chart .x-label {
+	font-size: 0.8em;
+}
+.chart .chart-label {
+	font-size: 0.7em;
+	text-anchor: right;
+}

@@ -1,0 +1,10 @@
+.tick text {
+	font-size: 0.95em;
+}
+
+.axis-label {
+	text-anchor: middle;
+	font-size: 0.8em;
+}
+
+b { font-weight: 600; }

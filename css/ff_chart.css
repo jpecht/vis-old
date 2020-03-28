@@ -1,0 +1,22 @@
+
+#ff-table {
+	border-collapse: collapse;
+}
+
+
+.cell {
+	font-size: 0.7em;
+	border: 1px solid #CCC;
+	padding: 2px;
+	max-width: 75px;
+}
+
+#ff-2-legend {
+	text-align: center;
+	margin-top: 25px;
+}
+.legend-text {
+	font-size: 0.9em;
+}
+
+#ff-2-source { margin-top: 10px; }

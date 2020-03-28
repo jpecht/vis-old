@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · fantasy basketball ranks</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/bball_ranks.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="income-post" class="post">
+					<div class="post-title">Fantasy Basketball Ranks 2016</div>
+					<div class="post-subtitle">the top basketball players in fantasy scoring for 2016</div>
+					<div class="post-date">Oct 21, 2016</div>
+					<div class="post-content">
+						<div class="post-text">
+							<p>So for the 2016-2017 season, I decided to a repeat of an analysis I did two years ago (mostly because I'm in a league this season =P).</p>
+							<p>It's a list of the NBA players ranked by how well they performed in the 8 categories used for fantasy basketball. Players are ranked in each category relative to how well they perform among their peers. This makes sense because in fantasy basketball, you want to pick players that not only score points, but perform well in every category.</p>
+							<p>The number shown for each player represents the sum of that player's Z-value for each category using a normal distribution. The pool used were the top 200 players in fantasy points last season. Also, the turnover category was omitted this season.</p>
+							<p><span style="font-weight:400">So, a <span style="color:rgb(33,102,172);">positive</span> score indicates above average performance, while a <span style="color:rgb(178,24,43);">negative</span> score indicates below average performance.</span></p>
+						</div>
+						<div class="table-wrapper"></div>
+					</div>
+				</div>
+			</div>
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			<footer></footer>
+		</div>
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="js/main.js"></script>		
+		<script src="js/bball_ranks_2016.js"></script>		
+	</body>
+</html>

@@ -1,0 +1,30 @@
+/*#drought-slider {
+	margin: 20px;
+	width: 40%;
+}
+
+#drought-slider-text {
+	text-align: left;
+	font-size: 1em;
+}*/
+
+
+#drought-legend {
+	margin-bottom: 15px;	
+}
+
+div[id ^= "drought-legend-text-"] {
+	text-align: center;
+	color: white;
+	width: 200px;
+	display: inline;
+	margin-right: -4px;
+	padding: 2px 10px;
+	font-size: 0.7em;
+}
+
+#drought-legend-text-1 { background-color: rgb(253,212,158); color: black; }
+#drought-legend-text-2 { background-color: rgb(253,187,132); color: black; }
+#drought-legend-text-3 { background-color: rgb(252,141,89); }
+#drought-legend-text-4 { background-color: rgb(227,74,51); }
+#drought-legend-text-5 { background-color: rgb(179,0,0); }

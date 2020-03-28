@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · cali drought</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/jquery.nouislider.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/drought.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="income-post" class="post">
+					<div class="post-title">California Drought</div>
+					<div class="post-subtitle">recent drought crisis in california</div>
+					<div class="post-date">Sept 2, 2014</div>
+					<div class="post-content">
+						<div class="post-text">
+							<p>A quick look at the severity of the recent drought in California</p>
+						</div>
+						
+						<canvas id="drought-chart"></canvas>
+						<!-- <div id="drought-slider"></div>
+						<div id="drought-slider-text">Range: 2000-2014</div> -->
+						<div id="drought-legend">
+							<div id="drought-legend-text-1">abnormally dry</div>
+							<div id="drought-legend-text-2">moderate drought</div>
+							<div id="drought-legend-text-3">severe drought</div>
+							<div id="drought-legend-text-4">extreme drought</div>
+							<div id="drought-legend-text-5">exceptional drought</div>
+						</div>
+						<div id="drought-source" class="source">Source: National Drought Migration Center</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			
+			<footer></footer>
+		</div>
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="lib/jquery.nouislider.min.js"></script>
+		<script src="lib/Chart.js"></script>		
+		<script src="js/main.js"></script>		
+		<script src="js/drought.js"></script>		
+	</body>
+</html>

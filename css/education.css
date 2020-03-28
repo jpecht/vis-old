@@ -1,0 +1,39 @@
+.counties {
+	fill: none;
+}
+.states {
+	fill: none;
+	stroke: white;
+	stroke-linejoin: round;
+}
+
+
+#education-legend-wrapper {
+	text-align: center;
+}
+
+#education-legend {
+	font-size: 0.8em;
+	width: 350px;
+	height: 50px;
+}
+
+#education-dropdown-container {
+	margin-left: 20px;
+}
+#education-dropdown {
+	position: relative;
+}
+#education-dropdown-container a:hover {
+	background-color: #E0E0E0;	
+}
+
+#national-stat {
+	margin-top: -5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#county-stat {
+	text-align: center;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,24 @@
+.table-wrapper {
+	text-align: center;	
+}
+.results {
+	font-weight: 400;
+	width: 190px;
+}
+.results tr:first-child {
+	font-weight: 600;
+}
+.results td {
+	cursor: default;
+}
+.num-cell {
+	width: 30px;
+}
+.name-cell {
+	width: 60px;
+}
+.rating-cell {
+	width: 100px;
+	text-align: right;
+	padding-right: 10px !important;
+}

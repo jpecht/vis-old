@@ -1,0 +1,19 @@
+.chart { border: 1px solid #CCC; }
+.node {
+	stroke-width: 1px;
+}
+.link {
+	stroke-width: 1;
+	stroke-opacity: .6;
+}
+.chart-info {
+	text-align: center;
+	font-weight: 400;
+	margin-top: 10px;
+}
+.legend {
+	text-align: center;
+	margin-top: 10px;
+}
+.legend text { text-anchor: middle; }
+.legend-text { margin-top: -5px; }

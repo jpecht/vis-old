@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · dc demographics</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type='text/css'>
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/dc_demographics.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="income-post" class="post">
+					<div class="post-title">DC Demographics</div>
+					<div class="post-subtitle">breakdown of dc by demographic</div>
+					<div class="post-date">Jun 18, 2015</div>
+					<div class="post-content">
+						<div class="post-text">
+							DC looks really interesting when colored by census block groups.
+							The Northwest-Southeast divide looks pretty prominent for some of the indicators. 
+							You can really see how divided DC is.
+							Data is from the 2013 ACS.
+						</div>
+						
+						<svg class="map"></svg>
+						<svg class="legend"></svg>
+						<div>
+							<div class="btn-group char-btn-group" role="group">
+								<button type="button" class="btn btn-default active" ref="race">Ethnicity</button>
+								<button type="button" class="btn btn-default" ref="income">Income</button>
+								<button type="button" class="btn btn-default" ref="povrate">Poverty</button>
+								<button type="button" class="btn btn-default" ref="education">Education</button>
+							</div>
+						</div>
+						<div>
+							<div class="btn-group race-btn-group" role="group">
+								<button type="button" class="btn btn-default active" ref="white">White</button>
+								<button type="button" class="btn btn-default" ref="black">Black</button>
+								<!--<button type="button" class="btn btn-default" ref="asian">Asian</button>-->
+								<button type="button" class="btn btn-default" ref="hispanic">Hispanic</button>
+							</div>
+							<div class="btn-group education-btn-group" role="group">
+								<button type="button" class="btn btn-default active" ref="noed">Below High</button>
+								<button type="button" class="btn btn-default" ref="high">High</button>
+								<button type="button" class="btn btn-default" ref="associates">Associate's</button>
+								<button type="button" class="btn btn-default" ref="bachelors">Bachelor's</button>
+								<button type="button" class="btn btn-default" ref="masters">Master's</button>
+								<button type="button" class="btn btn-default" ref="prof">Professional</button>
+								<button type="button" class="btn btn-default" ref="phd">Doctorate's</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			
+			<footer></footer>
+		</div>
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="lib/topojson.v1.min.js"></script>
+		<script src="lib/queue.min.js"></script>
+		<script src="lib/nprogress.js"></script>
+		<script src="js/main.js"></script>		
+		<script src="js/dc_demographics.js"></script>		
+	</body>
+</html>

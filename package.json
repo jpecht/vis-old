@@ -1,0 +1,30 @@
+{
+  "name": "vis",
+  "version": "1.0.0",
+  "description": "collection of visualizations",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-imagemin": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-pretty-data": "^0.1.1"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpecht/vis.git"
+  },
+  "keywords": [
+    "vis",
+    "d3"
+  ],
+  "author": "jpecht",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpecht/vis/issues"
+  },
+  "homepage": "https://github.com/jpecht/vis"
+}

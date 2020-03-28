@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>visualizations · fantasy football revisited</title>
+		<meta name="description" content="">
+		<meta name="author" content="jpecht">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<link rel="shortcut icon" href="../img/j_icon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:800,600,400,300' rel='stylesheet' type='text/css'>
+		<link href="css/tooltipster.css" rel="stylesheet" type="text/css" />
+		<link href="css/tooltipster-light.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" rel="stylesheet" type='text/css'>
+		<link href="css/ff_chart.css" rel="stylesheet" type='text/css'>
+	</head>
+
+	<body>
+		<header class="postpage-header"><a href="//www.jpecht.com/vis" id="homepage-link">visualizations</a></header>
+		
+		<div class="content postpage-content">
+			<div class="post-wrapper">
+				<div id="income-post" class="post">
+					<div class="post-title">Fantasy Football Revisited</div>
+					<div class="post-subtitle">how well fantasy football players performed</div>
+					<div class="post-date">Dec 25, 2014</div>
+					<div class="post-content">
+						<div class="post-text">
+							<p>As the football season ends, I wanted to measure how well football players performed in ESPN's
+								fantasy football league relative to how they were ranked when they were drafted. 
+								In short, it's measuring each player's expectations vs. their performance.</p>
+							<p>The format is still in snake draft form and players are placed based on their average draft
+								pick rank. <span style="font-weight:400">A <span style="color:rgb(33,102,172);">blue</span>
+								player represents a "sleeper" pick: someone who really exceeded expectations;
+								a <span style="color:rgb(178,24,43);">red</span> player represents a "bust":
+								someone who did not do as well as expected.</span> Because some positions score more than others
+								by nature (e.g. QBs), the comparisons made are within each player's football position 
+								(thank you casey for pointing that out).</p>
+							<p>And...if you were wondering about my fantasy football team, which I know you are, I lost my semi-final
+								game, mostly due to Dez Bryant's 3 TD game... but! I thought I did pretty well considering I
+								had drafted AP and Ray Rice haha.</p>
+								
+						</div>
+						
+						<div id="ff-table-wrapper">
+							<table id="ff-table"></table>
+						</div>
+												
+						<div id="ff-2-legend" class="legend">
+							<svg width="450" height="40"></svg>
+						</div>
+
+						<div id="ff-2-source" class="source">Source: ESPN Free Fantasy Football 2014</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="about-popup-wrapper">
+				<div id="about-popup"></div>
+			</div>
+			
+			<footer></footer>
+		</div>
+			
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="lib/d3.min.js" charset="utf-8"></script>
+		<script src="lib/jquery.easing.1.3.js"></script>
+		<script src="lib/jquery.tooltipster.min.js"></script>		
+		<script src="js/main.js"></script>		
+		<script src="js/ff_performance.js"></script>	
+	</body>
+</html>

@@ -1,0 +1,36 @@
+.snowfall-chart {
+	width: 450px;
+}
+.month-labels text {
+	font-size: 9px;
+	width: 25px;
+}
+.year-labels text {
+	text-anchor: middle;
+	font-size: 9px;
+}
+.data-year rect {
+	stroke: #E0E0E0;
+}
+.legend {
+	text-align: center;
+}
+.legend rect {
+	stroke: #AAA;
+}
+.legend text {
+	alignment-baseline: middle;
+	font-size: 11px;
+}
+
+.snowfall-info {
+	font-size: 12px;
+}
+.snowfall-time {
+}
+.snowfall-val {
+	font-weight: 400;
+}
+.chart-buttons {
+	margin-top: 10px;
+}
